@@ -41,7 +41,7 @@ int main()
         radix[a[i] - cmin].push_back(a[i] - cmin);
     }
 
-    for(int i=1;i<=cmax-cmin;i++)
+    for(int i=0;i<=cmax-cmin;i++)
     {
         for(auto v : radix[i])
         {
