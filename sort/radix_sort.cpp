@@ -14,8 +14,8 @@ int main()
     //reopen("a.inp","r",stdin);
 
     cin >> n;
-    int cmax = 0;
-    int cmin = 0;
+    int cmax = -1e9;
+    int cmin = +1e9;
 
     /// y tuong chinh la luu moi phan tu vao vector tuong ung voi gia tri cua
     /// phan tu do, do phuc tap O(n + cmax)
