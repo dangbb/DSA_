@@ -1,1 +1,22 @@
 if there something wrongs, plz contact Dang intermediately, via Discord :<
+
+Exercise_1: has public code 
+Exercise_2: has public code
+Exercise_3: has puclic code
+Exercise_4: has public code
+Exercise_5: has puclic code 
+Exercise_4: 
+  Giải thuật đệ quy cho một vấn đề cần phải thoả mãn các đòi hỏi sau:
+1. Chứa lời giải cho các trường hợp đơn giản nhất của vấn đề. Các
+trường hợp này được gọi là các trường hợp cơ sở hay các
+trường hợp dừng.
+2. Chứa các lời gọi đệ quy giải quyết các vấn đề con với cỡ nhỏ
+hơn.
+3. Các lời gọi đệ quy sinh ra các lời gọi đệ quy khác và về tiềm
+năng các lời gọi đệ quy phải dẫn tới các trường hợp cơ sở.
+  
+  
+  
+  
+  
+
