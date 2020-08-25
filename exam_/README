@@ -6,6 +6,9 @@ Exercise_3: has puclic code
 Exercise_4: has public code
 Exercise_5: has puclic code 
 Exercise_4: 
+
+  Thuật toán đệ quy, các hàm đệ quy phải có lời gọi hàm đền chính nó.
+  
   Giải thuật đệ quy cho một vấn đề cần phải thoả mãn các đòi hỏi sau:
 1. Chứa lời giải cho các trường hợp đơn giản nhất của vấn đề. Các
 trường hợp này được gọi là các trường hợp cơ sở hay các
