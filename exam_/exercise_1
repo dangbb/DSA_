@@ -1,0 +1,100 @@
+#include <bits/stdc++.h>
+#define f first
+#define s second
+
+using namespace std;
+
+typedef long long ll;
+
+/// all SBD numbers should be distinct, otherwise, blame Dang :<
+
+struct student_info
+{
+    string Name;
+    int SBD;
+};
+
+struct sll
+{
+    student_info info;
+
+    sll* Next;
+
+    sll()
+    {
+        Next = NULL;
+    }
+
+    void Add(sll* new_Node)
+    {
+        new_Node->Next = Next;
+        Next = new_Node;
+    }
+};
+
+sll* Head = NULL;
+
+int query;
+int format = 1;
+
+/// with format = 0, using getline when reading student name, name and number must be in different line
+/// with format = 1, using cin when reading student name, name and number can be in same line
+
+int main()
+{
+    freopen("a.inp","r",stdin);
+
+    cin >> query;
+
+    while(query --)
+    {
+        sll* new_student = new sll();
+        if(format)
+        {
+            cin >> new_student->info.Name;
+            cin >> new_student->info.SBD;
+        }
+        else
+        {
+            getline(cin , new_student->info.Name);
+            cin >> new_student->info.SBD;
+        }
+
+        if (Head == NULL)
+        {
+            Head = new_student;
+        }
+        else
+        {
+            sll* Pseu_Head = Head;
+            sll* Pos = NULL;
+
+            while(Pseu_Head != NULL)
+            {
+                if(new_student->info.SBD > Pseu_Head->info.SBD)
+                {
+                    Pos = Pseu_Head;
+                }
+                Pseu_Head = Pseu_Head->Next;
+            }
+
+            if(Pos == NULL)
+            {
+                new_student->Add(Head);
+                Head = new_student;
+            }
+            else
+            {
+                Pos->Add(new_student);
+            }
+        }
+    }
+
+    while(Head != NULL)
+    {
+        cout << Head->info.Name << " " << Head->info.SBD << endl;
+        Head = Head->Next;
+    }
+
+    /// overall complexity: O(n^2)
+}
