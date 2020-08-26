@@ -1,13 +1,13 @@
-#Đề cương: 
-##Các chiến lược thiết kế thuật toán :
+# Đề cương: 
+## Các chiến lược thiết kế thuật toán :
   
-##Chia để trị: 
+## Chia để trị: 
 
 Chia vấn đề thành các vấn đề con cùng dạng với vấn đề đã cho, chỉ khác là kích thước nhỏ hơn. -> là kĩ thuật top-down, tính nghiệm các vấn đề con từ lớn tới nhỏ
 Mỗi vấn đề con được giải quyết độc lập, sau đó ta kết hợp nghiệm lời của các vấn đề con để nhận được nghiệm cho vấn đề đã cho.
 Nếu vấn đề con đủ nhỏ có thể dễ dàng tính được nghiệm, thì ta tiến hành giải quyết. Nếu không ta áp dụng đệ quy thủ tục ở trên 
  
-##Đệ quy:
+## Đệ quy:
 
 là 1 thuật toán chia để trị, được biểu diễn các hàm đệ quy có lời gọi hàm đền chính nó.
   
@@ -31,7 +31,7 @@ năng các lời gọi đệ quy phải dẫn tới các trường hợp cơ s�
 
 là kĩ thuật chia nhỏ bài toán , bottom-up, tính nghiệm các bài toán từ nhỏ đến lớn và ghi lại kết quả đã tính được, thực hiện bằng duyệt tuần tự
 
-###Chiến lược thực hiện:
+### Chiến lược thực hiện:
     1, đưa ra cách tính nghiệm bài toán con đơn giản nhất
     2, tìm ra công thức, quy luật xây dựng nghiệm của bài toán thông qua các bài toán con
     3, thiết kế bảng lưu nghiệm bài toán
